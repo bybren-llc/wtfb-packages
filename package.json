@@ -1,0 +1,28 @@
+{
+  "name": "wtfb-packages",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WTFB Package Ecosystem - CLI tools for creative projects",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "clean": "rm -rf packages/*/dist packages/*/node_modules",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bybren-llc/wtfb-packages.git"
+  },
+  "author": "Words To Film By <dev@wordstofilmby.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
