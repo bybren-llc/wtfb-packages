@@ -18,9 +18,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bybren-llc/wtfb-packages.git"
+    "url": "https://github.com/cheddarfox/wtfb-packages.git"
   },
-  "author": "Words To Film By <dev@wordstofilmby.com>",
+  "author": "Scott <scott@wordstofilmby.com>",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"

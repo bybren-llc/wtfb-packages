@@ -5,7 +5,7 @@
   "type": "module",
   "main": "src/index.js",
   "bin": {
-    "wtfb": "./bin/index.js"
+    "wtfb": "bin/index.js"
   },
   "scripts": {
     "build": "echo 'No build step required'",
@@ -22,16 +22,16 @@
     "fdx",
     "cli"
   ],
-  "author": "Words To Film By <dev@wordstofilmby.com>",
+  "author": "Scott <scott@wordstofilmby.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bybren-llc/wtfb-packages.git",
+    "url": "git+https://github.com/cheddarfox/wtfb-packages.git",
     "directory": "packages/cli"
   },
-  "homepage": "https://github.com/bybren-llc/wtfb-packages/tree/main/packages/cli#readme",
+  "homepage": "https://github.com/cheddarfox/wtfb-packages/tree/main/packages/cli#readme",
   "bugs": {
-    "url": "https://github.com/bybren-llc/wtfb-packages/issues"
+    "url": "https://github.com/cheddarfox/wtfb-packages/issues"
   },
   "engines": {
     "node": ">=18.0.0"

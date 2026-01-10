@@ -54,7 +54,7 @@ wtfb info               # Show CLI information
 ### Setup
 
 ```bash
-git clone https://github.com/bybren-llc/wtfb-packages.git
+git clone https://github.com/cheddarfox/wtfb-packages.git
 cd wtfb-packages
 npm install
 ```
@@ -115,8 +115,8 @@ Adding new formats requires only implementing the `generate()` method.
 
 ## Related Projects
 
-- [wtfb-projects-template](https://github.com/bybren-llc/wtfb-projects-template) - Project template with multi-AI harness
-- [wtfb-claude-marketplace](https://github.com/bybren-llc/wtfb-claude-marketplace) - Claude Code plugins
+- [wtfb-projects-template](https://github.com/cheddarfox/wtfb-projects-template) - Project template with multi-AI harness
+- [wtfb-claude-marketplace](https://github.com/cheddarfox/wtfb-claude-marketplace) - Claude Code plugins
 
 ---
 
@@ -137,6 +137,6 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 <p align="center">
   <strong>Words To Film By</strong><br>
-  <a href="https://github.com/sponsors/bybren-llc">Sponsor</a> •
-  <a href="https://github.com/bybren-llc/wtfb-packages/issues">Issues</a>
+  <a href="https://github.com/sponsors/cheddarfox">Sponsor</a> •
+  <a href="https://github.com/cheddarfox/wtfb-packages/issues">Issues</a>
 </p>
