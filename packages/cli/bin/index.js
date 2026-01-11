@@ -13,15 +13,19 @@
 
 import { Command } from 'commander';
 import chalk from 'chalk';
+import { createRequire } from 'module';
 import { validateCommand } from '../src/commands/validate.js';
 import { exportCommand } from '../src/commands/export.js';
+
+const require = createRequire(import.meta.url);
+const pkg = require('../package.json');
 
 const program = new Command();
 
 program
   .name('wtfb')
   .description('WTFB CLI - Validation and export tools for creative projects')
-  .version('1.0.0');
+  .version(pkg.version);
 
 // Validate command
 program
@@ -60,7 +64,7 @@ program
   .command('info')
   .description('Show project information')
   .action(() => {
-    console.log(chalk.blue.bold('\n  WTFB CLI v1.0.0\n'));
+    console.log(chalk.blue.bold(`\n  WTFB CLI v${pkg.version}\n`));
     console.log('  Validation and export tools for creative projects.');
     console.log('  Part of the Words To Film By ecosystem.\n');
     console.log(chalk.gray('  https://github.com/bybren-llc/wtfb-packages\n'));

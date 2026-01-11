@@ -2,6 +2,7 @@
 
 **Monorepo for the Words To Film By package ecosystem**
 
+[![npm version](https://img.shields.io/npm/v/@wtfb/cli.svg)](https://www.npmjs.com/package/@wtfb/cli)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ---

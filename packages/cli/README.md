@@ -2,6 +2,8 @@
 
 **Validation and export tools for creative projects**
 
+[![npm version](https://img.shields.io/npm/v/@wtfb/cli.svg)](https://www.npmjs.com/package/@wtfb/cli)
+
 Part of the [Words To Film By](https://github.com/bybren-llc/wtfb-projects-template) ecosystem.
 
 ---
