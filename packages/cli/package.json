@@ -1,6 +1,6 @@
 {
   "name": "@wtfb/cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WTFB CLI - Validation and export tools for creative projects",
   "type": "module",
   "main": "src/index.js",
@@ -26,12 +26,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cheddarfox/wtfb-packages.git",
+    "url": "git+https://github.com/bybren-llc/wtfb-packages.git",
     "directory": "packages/cli"
   },
-  "homepage": "https://github.com/cheddarfox/wtfb-packages/tree/main/packages/cli#readme",
+  "homepage": "https://github.com/bybren-llc/wtfb-packages/tree/main/packages/cli#readme",
   "bugs": {
-    "url": "https://github.com/cheddarfox/wtfb-packages/issues"
+    "url": "https://github.com/bybren-llc/wtfb-packages/issues"
   },
   "engines": {
     "node": ">=18.0.0"

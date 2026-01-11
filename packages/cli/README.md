@@ -2,7 +2,7 @@
 
 **Validation and export tools for creative projects**
 
-Part of the [Words To Film By](https://github.com/cheddarfox/wtfb-projects-template) ecosystem.
+Part of the [Words To Film By](https://github.com/bybren-llc/wtfb-projects-template) ecosystem.
 
 ---
 
@@ -131,7 +131,7 @@ exports/
 
 ## Related
 
-- [WTFB Projects Template](https://github.com/cheddarfox/wtfb-projects-template) - Full project template
+- [WTFB Projects Template](https://github.com/bybren-llc/wtfb-projects-template) - Full project template
 - [Fountain Syntax](https://fountain.io/syntax) - Screenplay format reference
 
 ---
