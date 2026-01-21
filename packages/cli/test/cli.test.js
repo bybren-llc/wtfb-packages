@@ -91,4 +91,29 @@ describe('@wtfb/cli', () => {
       fs.rmSync(tmpDir, { recursive: true });
     }
   });
+
+  test('validate command parses fountain files without error', () => {
+    const tmpDir = fs.mkdtempSync(join(os.tmpdir(), 'wtfb-test-'));
+    try {
+      // Create a test fountain file
+      fs.writeFileSync(join(tmpDir, 'test.fountain'), `Title: Test
+Author: Test
+
+INT. LOCATION - DAY
+
+CHARACTER
+Hello, world.
+`);
+      const output = execSync(`node ${CLI_PATH} validate`, {
+        encoding: 'utf-8',
+        cwd: tmpDir,
+        stdio: ['pipe', 'pipe', 'pipe'],
+      });
+      // Validate should complete without throwing and not contain parse errors
+      assert.ok(!output.includes('Parse error'), 'Should not have parse errors');
+      assert.ok(output.includes('valid') || output.includes('passed'), 'Should indicate validation passed');
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
 });

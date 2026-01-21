@@ -11,7 +11,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { glob } from 'glob';
-import fountain from 'fountain-js';
+import { Fountain } from 'fountain-js';
 
 export async function validateFountain(autoFix = false) {
   const files = await glob('**/*.fountain', {
@@ -52,7 +52,8 @@ function validateFountainContent(content, filename) {
 
   // Parse with fountain-js
   try {
-    const parsed = fountain.parse(content);
+    const parser = new Fountain();
+    const parsed = parser.parse(content);
 
     // Validate scene headings
     const sceneHeadingPattern = /^(INT\.|EXT\.|INT\/EXT\.|I\/E\.)\s+.+/i;
