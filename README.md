@@ -11,7 +11,7 @@
 
 | Package | Version | Description |
 |---------|---------|-------------|
-| [@wtfb/cli](packages/cli) | 1.0.0 | CLI tools for validation and export |
+| [@wtfb/cli](packages/cli) | 1.0.3 | CLI tools for validation, export, and project init |
 
 ---
 
@@ -45,6 +45,7 @@ wtfb validate           # Validate Fountain, Markdown, spelling
 wtfb export-pdf         # Export screenplay to PDF
 wtfb export-fdx         # Export to Final Draft XML
 wtfb export-html        # Export to HTML preview
+wtfb init-readme        # Generate IMDb-style project README
 wtfb info               # Show CLI information
 ```
 
@@ -116,7 +117,7 @@ Adding new formats requires only implementing the `generate()` method.
 
 ## Related Projects
 
-- [wtfb-projects-template](https://github.com/bybren-llc/wtfb-projects-template) - Project template with multi-AI harness
+- [story-systems-template](https://github.com/bybren-llc/story-systems-template) - Project template with multi-AI harness
 - [wtfb-claude-marketplace](https://github.com/bybren-llc/wtfb-claude-marketplace) - Claude Code plugins
 
 ---
