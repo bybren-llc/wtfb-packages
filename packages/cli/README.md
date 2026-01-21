@@ -4,7 +4,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@wtfb/cli.svg)](https://www.npmjs.com/package/@wtfb/cli)
 
-Part of the [Words To Film By](https://github.com/bybren-llc/wtfb-projects-template) ecosystem.
+Part of the [Words To Film By](https://github.com/bybren-llc/story-systems-template) ecosystem.
 
 ---
 
@@ -39,6 +39,9 @@ wtfb export-html
 
 # Skip pre-flight validation
 wtfb export-pdf --no-validate
+
+# Initialize project README
+wtfb init-readme --title "My Project" --type screenplay
 
 # Show CLI info
 wtfb info
@@ -85,6 +88,19 @@ Export Fountain screenplay to HTML for web preview.
 |--------|-------------|
 | `-o, --output <path>` | Custom output path |
 | `--no-validate` | Skip pre-flight validation |
+
+### `wtfb init-readme`
+
+Initialize project README from IMDb-style template.
+
+| Option | Description |
+|--------|-------------|
+| `--title <title>` | Override project title |
+| `--type <type>` | Project type: `screenplay`, `novel`, or `film-production` |
+| `--force` | Overwrite even if README is customized |
+| `--dry-run` | Show what would be generated without writing |
+
+The command reads project configuration from `.wtfb/project.json` if available, or uses the provided options.
 
 ---
 
@@ -133,7 +149,7 @@ exports/
 
 ## Related
 
-- [WTFB Projects Template](https://github.com/bybren-llc/wtfb-projects-template) - Full project template
+- [Story Systems Template](https://github.com/bybren-llc/story-systems-template) - Full project template
 - [Fountain Syntax](https://fountain.io/syntax) - Screenplay format reference
 
 ---

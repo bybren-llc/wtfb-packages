@@ -1,6 +1,6 @@
 {
   "name": "@wtfb/cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "WTFB CLI - Validation and export tools for creative projects",
   "type": "module",
   "main": "src/index.js",

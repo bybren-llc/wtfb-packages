@@ -8,7 +8,7 @@
  *   wtfb export-pdf [file]      Export to PDF
  *   wtfb export-fdx [file]      Export to Final Draft XML
  *   wtfb export-html [file]     Export to HTML
- *   wtfb init [name]            Initialize a new project
+ *   wtfb init-readme [options]  Initialize project README
  */
 
 import { Command } from 'commander';
@@ -16,6 +16,7 @@ import chalk from 'chalk';
 import { createRequire } from 'module';
 import { validateCommand } from '../src/commands/validate.js';
 import { exportCommand } from '../src/commands/export.js';
+import { initReadmeCommand } from '../src/commands/init-readme.js';
 
 const require = createRequire(import.meta.url);
 const pkg = require('../package.json');
@@ -58,6 +59,16 @@ program
   .option('-o, --output <path>', 'Output file path')
   .option('--no-validate', 'Skip pre-flight validation')
   .action((file, options) => exportCommand('html', file, options));
+
+// Init README command
+program
+  .command('init-readme')
+  .description('Initialize project README from IMDb-style template')
+  .option('--title <title>', 'Override project title')
+  .option('--type <type>', 'Project type (screenplay|novel|film-production)')
+  .option('--force', 'Overwrite even if README is customized')
+  .option('--dry-run', 'Show what would be generated without writing')
+  .action(initReadmeCommand);
 
 // Info command
 program
